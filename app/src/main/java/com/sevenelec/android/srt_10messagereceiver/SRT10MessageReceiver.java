@@ -29,11 +29,9 @@ public class SRT10MessageReceiver extends BroadcastReceiver {
             // Message Format : ABCDED,G,H,I,J
             // ABCDEF :  Anchor Address, 000000 - do not know the anchor address (Actually it is Adv Mode)
             // G : Conver Range (unit:m) of the Anchor
-            // H : 0 -> Cover Range is the danger Area (In Conn Mode), -1 -> Emergency button pressed
-            //     0 -> Distance is in the danger area (In Adv Mode), -1 -> Emergency button pressed
-            //     1 -> Cover Range is the safe area (In Conn Mode), 127 -> Emergency button pressed
-            //     1 -> Distance is in the safe area (In Adv Mode), 127 -> Emergency button pressed
-            // I : Distance (unit : m)
+            // H : 0 -> Cover Range is the danger area
+            //     1 -> Cover Range is the safe area
+            // I : Distance (unit : m), -1 -> Emergency button pressed
             // J : Battery Level (unit : %)
 
         }
